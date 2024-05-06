@@ -1,0 +1,41 @@
+<!-- <section id="contact" class="contact bg-light py-4"> -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact me</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="contactOutput" class="mt-4"></div>
+        </div>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+                document.getElementById('contactOutput').innerHTML = "<p>Name: " + name + "</p><p>Email: " + email + "</p><p>Phone: " + phone + "</p>";
+            });
+        </script>
+    <!-- </section> -->

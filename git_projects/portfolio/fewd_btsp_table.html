@@ -1,0 +1,331 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+            /* text-align: center; */
+        }
+
+        h2 {
+            color: #3c89da;
+        }
+
+        div, p, table, ul, li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #007BFF;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        ul li:before {
+            content: "\2022";
+            color: #007BFF;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">RESUME </h1>
+    <div>
+        <h2 style="display: inline-block;">Name : </h2>
+        <p style="display: inline-block;">Shivani Mettu</p>
+      </div>
+      <div>
+        <h2 style="display: inline-block;">Address : </h2>
+        <p style="display: inline-block;">Hyderabad,Telangana</p>
+      </div>
+      <div>
+        <h2 style="display: inline-block;">Date of Birth : </h2>
+        <p style="display: inline-block;">18 Sept 2003</p>
+      </div>
+      <div>
+        <h2 style="display: inline-block;">Mobile Number :</h2>
+        <p style="display: inline-block;">73861421294</p>
+      </div>
+      <div>
+        <h2 style="display: inline-block;">Email Id</h2>
+        <p style="display: inline-block;">shivanimettu18@gmail.com</p>
+      </div>
+
+<h1>Education</h1>
+<table border="1px" id="educationTable">
+  <tr>
+    <th>Qualification</th>
+    <th>College</th>
+    <th>University</th>
+    <th>Year of Passing</th>
+    <th>Percentage</th>
+  </tr>
+</table>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Fetching education details from JSON file
+    fetch("fewd_edu.json")
+      .then(response => response.json())
+      .then(data => {
+        // Populate the education table
+        const educationTable = document.getElementById("educationTable");
+
+        data.education.forEach(edu => {
+          const row = educationTable.insertRow();
+          const keys = Object.keys(edu);
+
+          keys.forEach((key, index) => {
+            const cell = row.insertCell(index);
+            cell.textContent = edu[key];
+          });
+        });
+      })
+      .catch(error => console.error("Error fetching education details:", error));
+
+    // Change the background color of the h1 element
+    document.querySelector("h1").style.backgroundColor = "#b6d4f4";
+  });
+</script>
+<h1>Certifications</h1>
+<h2>Certificate of Course Completion in Web development</h2>
+<p>Certifcate of course completion in Web development from Coursera </p>
+<h1>Skills</h1>
+<ul>
+    <li>Java</li>
+    <li>C++</li>
+    <li>C</li>
+    <li>Python</li>
+    <li>Sql</li>
+</ul>
+<h1>Projects</h1>
+<p>Face Detection and Image processing through java and OpenCv</p>
+<h1>Personal Skills</h1>
+<ul>
+    <li>Good at organising tasks and projects in a structured manner.</li>
+    <li>Have an ability to focus and pursue a goal or activity with ruthless drive.</li>
+    <li>Eagerness to know and learn something.
+    </li>
+</ul>
+<h1>Languages Known  </h1>
+<ul>
+    <li>English</li>
+    <li>Telugu</li>
+    <li>Hindi</li>
+</ul>
+<h1>Hobbies</h1>
+<ul>
+    <li>reading books</li>
+    <li>Cooking</li>
+    <li>Yoga</li>
+</ul>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("h1").style.backgroundColor = "#b6d4f4";
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        h2 {
+            color: #3c89da;
+        }
+
+        div,
+        p,
+        table,
+        ul,
+        li {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        ul li:before {
+            content: "\2022";
+            color: #007BFF;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">RESUME </h1>
+    <!-- Your other content... -->
+    <div>
+      <h2 style="display: inline-block;">Name : </h2>
+      <p style="display: inline-block;">Shivani Mettu</p>
+    </div>
+    <div>
+      <h2 style="display: inline-block;">Address : </h2>
+      <p style="display: inline-block;">Hyderabad,Telangana</p>
+    </div>
+    <div>
+      <h2 style="display: inline-block;">Date of Birth : </h2>
+      <p style="display: inline-block;">18 Sept 2003</p>
+    </div>
+    <div>
+      <h2 style="display: inline-block;">Mobile Number :</h2>
+      <p style="display: inline-block;">73861421294</p>
+    </div>
+    <div>
+      <h2 style="display: inline-block;">Email Id</h2>
+      <p style="display: inline-block;">shivanimettu18@gmail.com</p>
+    </div>
+    <!-- Bootstrap table for Education -->
+    <h1>Education</h1>
+    <div class="table-responsive">
+        <table class="table table-bordered" id="educationTable">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Qualification</th>
+                    <th>College</th>
+                    <th>University</th>
+                    <th>Year of Passing</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Education details will be dynamically inserted here using JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Your other content... -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Fetching education details from JSON file
+        fetch("fewd_edu.json")
+          .then(response => response.json())
+          .then(data => {
+            // Populate the education table
+            const educationTable = document.getElementById("educationTable");
+    
+            data.education.forEach(edu => {
+              const row = educationTable.insertRow();
+              const keys = Object.keys(edu);
+    
+              keys.forEach((key, index) => {
+                const cell = row.insertCell(index);
+                cell.textContent = edu[key];
+              });
+            });
+          })
+          .catch(error => console.error("Error fetching education details:", error));
+    
+        // Change the background color of the h1 element
+        document.querySelector("h1").style.backgroundColor = "#b6d4f4";
+      });
+    </script>
+    <h1>Certifications</h1>
+    <h2>Certificate of Course Completion in Web development</h2>
+    <p>Certifcate of course completion in Web development from Coursera </p>
+    <h1>Skills</h1>
+    <ul>
+        <li>Java</li>
+        <li>C++</li>
+        <li>C</li>
+        <li>Python</li>
+        <li>Sql</li>
+    </ul>
+    <h1>Projects</h1>
+    <p>Face Detection and Image processing through java and OpenCv</p>
+    <h1>Personal Skills</h1>
+    <ul>
+        <li>Good at organising tasks and projects in a structured manner.</li>
+        <li>Have an ability to focus and pursue a goal or activity with ruthless drive.</li>
+        <li>Eagerness to know and learn something.
+        </li>
+    </ul>
+    <h1>Languages Known  </h1>
+    <ul>
+        <li>English</li>
+        <li>Telugu</li>
+        <li>Hindi</li>
+    </ul>
+    <h1>Hobbies</h1>
+    <ul>
+        <li>reading books</li>
+        <li>Cooking</li>
+        <li>Yoga</li>
+    </ul>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.querySelector("h1").style.backgroundColor = "#b6d4f4";
+            });
+        </script>
+    <!-- Link to Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Your existing scripts... -->
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-iUqZ9D/xa1C/TL0m/YfR6p5lEUx87i16W8nUK6PWRerjZ5/BrSNBZ0s2NSyS7nJ3bSbGqBjJF3A52DiKU/Pe0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-iUqZ9D/xa1C/TL0m/YfR6p5lEUx87i16W8nUK6PWRerjZ5/BrSNBZ0s2NSyS7nJ3bSbGqBjJF3A52DiKU/Pe0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Shivani Mettu - Software Engineer</title>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        header {
+            background-color: #ffffff;
+            
+            text-align: center;
+            padding: 20px;
+            font-size:60px;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .social-icons {
+        display: flex;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .social-icons img {
+        border-radius: 50%; 
+    }
+
+        .what-i-do {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+       
+        .skill img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .left-side {
+            background-color: #0f1624cf;
+            width: 20%; 
+            height: 135%;
+            float: left;
+        }
+
+        .right-side {
+            width: 70%; 
+            height: 100%;
+            float: left;
+        }
+        .skill ul {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+    .skill ul li {
+        text-align: left;
+        padding-left: 30px; 
+        color: #333; 
+    }
+    .skill ul li i {
+        margin-right: 5px; 
+        color: #0c0c0c; 
+    }
+    .project-card {
+      margin-bottom: 20px;
+    }
+    .project {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project img {
+            width: 40px;
+            margin-right: 20px;
+        }
+        .image img {
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+            border-radius: 50%; 
+            border: 3px solid #eeeaea; 
+        }
+        .project h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        .weather-icon {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .navbar {
+            /* background-color: #333; */
+            overflow: hidden;
+            display: flex;
+        flex-direction: column;
+        align-items: left;
+        }
+
+        .navbar a {
+            /* float: left; */
+            display: flex;
+            /* clear: both; */
+            color: white;
+            text-align: left;
+            /* padding: 14px 16px; */
+            text-decoration: none;
+            font-size: 16px;
+            width: 100%;
+        }
+        .navbar a img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%; 
+        margin-left: 10px; 
+    }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar select {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            appearance: none; 
+            -webkit-appearance: none; 
+            -moz-appearance: none; 
+        }
+        .navbar select:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar select:focus {
+            outline: none;
+        }
+        .navbar option {
+            color: white;
+            background-color: #333;
+        }
+        .navbar option:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+
+    <div class="nav-icons">
+        
+    </div>
+    
+    <footer>
+    </footer>
+    <div class="left-side">
+        <h2 style="color:white">Shivani Mettu</h2>
+
+        <section>
+            <div class="image">
+                <img src="photo_new.jpg" alt="Image">
+                
+                
+            </div>
+            <p style="color:aliceblue">Hi! I am Shivani Mattu, an undergraduate in Computer Science, from Keshav Mamorial Institute of Technology. I am a software enthusiast. </p>
+        </section>
+
+        <!-- <section> -->
+        <div class="navbar">
+            <a href="#about">
+                <img src="about_me.png" alt="About" width="30">About Me</a>
+            <br>
+                <!-- <a href="#portfolio">Portfolio</a> -->
+            <a href="https://drive.google.com/file/d/1fXJzf0i1w719-rQjKEMWlAhk51BMFD7p/view?usp=drivesdk" target="-blank">
+                <img src="resume_img.png" alt="Resume" width="30">Resume</a>
+            <br>
+                <a href="contact.html" target=""-_blank>
+                <img src="contact.png" alt="Contact me" width="30">Contact Me</a>
+            <br>
+                <a href="#blog">
+                <img src="blog.png" alt="Blog" width="30">Blog</a>
+            <br>
+            <form>
+                <select onchange="window.location.href=this.value;">
+                  <option value="#" selected>More Pages</option>
+                  <option value="certificates.html">Certificates</option>
+                  <option value="education.html">Education</option>
+                </select>
+              </form>
+                <!-- <a href="#more"><img src="more_pages.jpeg" alt="More pages" width="30">More Pages</a> -->
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/shivani-" target="_blank"><img src="linkedin.png" alt="LinkedIn" width="30"></a>
+            <a href="https://github.com/" target="_blank"><img src="github.png" alt="GitHub" width="30"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="twitter.jpeg" alt="Twitter" width="30"></a>
+            <a href="https://www.hackerrank.com/mettushivani1621" target="_blank"><img src="hack_rank.png" alt="HackerRank" width="30"></a>
+        </div>
+        <br>
+        <br>
+        <!-- <div class="dropdown">
+            <button class="dropbtn">More Pages 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#certificates">Page 1</a>
+              <a href="#education">Page 2</a>
+              
+            </div>
+          </div>  -->
+    <!-- </section> -->
+    </div>
+    <section id="about">
+
+    <div class="right-side">
+        <header>
+            <h1>Shivani Mettu</h1>
+            <p>Software Engineer</p>
+            <p>I'm a software engineer specialised in artificial intelligence, frontend and backed development for complex scalable web apps. 
+                I write about software development on my blog. Check out my projects at portfolio.</p>
+        </header>
+        <section class="what-i-do">
+            
+        </section >
+        <h2 style="color:rgba(63, 36, 143, 0.861)">Skills</h2>
+        <section style="background-color:beige">
+            <div class="skill">
+                <ul>
+                    <li><i class="fab fa-java"></i> Java</li>
+                    <li><i class="fab fa-cuttlefish"></i> C++</li>
+                    <li><i class="fas fa-cogs"></i> C</li>
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fas fa-database"></i> SQL</li>
+                    <li><i class="fas fa-database"></i> Github</li>
+                    <li><i class="fas fa-database"></i> HTML</li>
+                    
+                    
+                </ul>
+            </div>
+        </section>
+        
+
+
+    <br>
+    <br>
+    
+    <h2 style="color:rgba(63, 36, 143, 0.861)">Projects</h2>
+<section class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3" style="background-color:blanchedalmond">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center mb-3 mb-md-0">
+                            <img src="robot.png" alt="IOT" class="img-fluid rounded" style="height: 70px;">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="card-title">Vision based rover integration</h5>
+                            <p class="card-text">Integrating a vision-based rover for object manipulation and detection. Technologies like ROS have been used in this project. This project is helpful for specially-abled people to manage their daily works.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3"style="background-color:blanchedalmond">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center mb-3 mb-md-0">
+                            <img src="weather_this.png" alt="frontend" class="img-fluid rounded" style="height: 70px;">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="card-title">Weather App</h5>
+                            <p class="card-text">Displaying the weather conditions, humidity in an area. This app uses frontend languages like html, css, javascript. It takes refernce from weather API and displays information. It also displays humidity, sunrise and sunset.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3"style="background-color:blanchedalmond">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center mb-3 mb-md-0">
+                            <img src="node_js.png" alt="Node js" class="img-fluid rounded" style="height: 70px;">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="card-title">To-do List</h5>
+                            <p class="card-text">The Simple To-Do List Web Application is a Node.js project designed to help users manage their tasks efficiently. The application allows users to create, read, update, and delete tasks from a list. The technology used is Node.JS framework basically written in javascript. It helps the users in organising the daily tasks.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3" style="background-color: blanchedalmond;">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center mb-3 mb-md-0">
+                            <img src="react.png" alt="React" class="img-fluid rounded" style="height: 40px;">
+                            <img src="angular.jpeg" alt="Angular" class="img-fluid rounded mt-3" style="height: 40px;">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="card-title">Recipe Finder Application</h5>
+                            <p class="card-text">The Recipe Finder Application is a basic user friendly project developed using Angular and React frameworks to help users discover, save, and share recipes from various sources. Users can search for recipes based on ingredients, cuisines, places, price or dietary preferences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+    </div>
+</section>
+</body>
+</html>

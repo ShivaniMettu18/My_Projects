@@ -1,0 +1,26 @@
+{
+    "education": [
+      {
+        "qualification": "B.Tech",
+        "college": "KMIT",
+        "university": "JNTUH",
+        "year_of_passing": 2025,
+        "percentage": 9.0
+      },
+      {
+        "qualification": "Intermediate",
+        "college": "Narayana Junior College",
+        "university": "Board of Intermediate Education",
+        "year_of_passing": 2021,
+        "percentage": 98.0
+      },
+      {
+        "qualification": "SSC",
+        "college": "Vivekananda Vidhyalayam School",
+        "university": "Telangana State SSC Board",
+        "year_of_passing": 2019,
+        "percentage": "9.8 CGPA"
+      }
+    ]
+  }
+  
